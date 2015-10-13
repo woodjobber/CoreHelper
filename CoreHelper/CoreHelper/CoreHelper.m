@@ -51,9 +51,9 @@ static inline NSArray *tech4GArray(){
 
 @property (nonatomic, strong)CTTelephonyNetworkInfo *telephonyNetworkInfo;
 
-@property (nonatomic, strong)Reachability *reachability;
-
 @property (nonatomic, strong)NSString *currentRailAccessTelephony;
+
+@property (nonatomic, copy) Reachability *reachability;
 
 @property (nonatomic, assign)BOOL isNotification;
 
@@ -89,7 +89,9 @@ NSString * const CoreHelperCurrentNetworkStatusStrKey  = @"CurrentNetworkStatusS
 -(void)deallocObserver{
     [CoreHelper cancelAllObservers:self.delegate,self, nil];
 }
-
+-(Reachability *)thisReachbility{
+    return [self reachability];
+}
 DEF_SINGLETON(CoreHelper);
 +(void)initialize{
     CoreHelper *helper          = [CoreHelper sharedInstance];
@@ -106,7 +108,10 @@ DEF_SINGLETON(CoreHelper);
 }
 -(Reachability *)reachability{
     if (!_reachability) {
-        _reachability = [Reachability reachabilityForInternetConnection];
+        _reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+         if (!_reachability) {
+             _reachability = [Reachability reachabilityForInternetConnection];
+        }
     
     }
     return _reachability;
@@ -261,6 +266,16 @@ DEF_SINGLETON(CoreHelper);
     return NetworkStatus == CoreHelperNetworkStatusWIFI;
 }
 
+-(BOOL)isReachable{
+    return [self.reachability isReachable];
+}
+-(BOOL)isReachableViaWiFi{
+    return [self.reachability isReachableViaWiFi];
+}
+-(BOOL)isReachableViaWWAN{
+    return [self.reachability isReachableViaWWAN];
+}
+
 #pragma mark -- Delegate
 -(void)coreHelperNetWorkStatusChanged:(NSNotification *)noti{
     if (noti.name == CTRadioAccessTechnologyDidChangeNotification && noti.object) {
@@ -274,6 +289,7 @@ DEF_SINGLETON(CoreHelper);
     if (self.status_ap.hash != str.hash) {
         self.status_ap = str;
         //this makes sure the change notification happens on the Main thread.
+        
         dispatch_async(dispatch_get_main_queue(), ^{
           [[NSNotificationCenter defaultCenter] postNotificationName:CoreHelperNetworkChangedNotification object:self userInfo:dic];
         });

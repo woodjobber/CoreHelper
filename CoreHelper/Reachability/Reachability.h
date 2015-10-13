@@ -116,6 +116,8 @@ typedef void (^NetworkReachability)(Reachability * reachability, SCNetworkConnec
 - (BOOL)isReachableViaWWAN;
 - (BOOL)isReachableViaWiFi;
 
+-(SCNetworkReachabilityFlags)reachabilityFlags;
+-(NSString*)currentReachabilityFlags;
 @end
 
 

@@ -85,6 +85,24 @@ static void PrintReachabilityFlags(SCNetworkReachabilityFlags flags, const char*
           );
 #endif
 }
+static NSString *reachabilityFlags(SCNetworkReachabilityFlags flags)
+{
+    return [NSString stringWithFormat:@"%c%c %c%c%c%c%c%c%c",
+#if	TARGET_OS_IPHONE
+            (flags & kSCNetworkReachabilityFlagsIsWWAN)               ? 'W' : '-',
+#else
+            'X',
+#endif
+            (flags & kSCNetworkReachabilityFlagsReachable)            ? 'R' : '-',
+            (flags & kSCNetworkReachabilityFlagsConnectionRequired)   ? 'c' : '-',
+            (flags & kSCNetworkReachabilityFlagsTransientConnection)  ? 't' : '-',
+            (flags & kSCNetworkReachabilityFlagsInterventionRequired) ? 'i' : '-',
+            (flags & kSCNetworkReachabilityFlagsConnectionOnTraffic)  ? 'C' : '-',
+            (flags & kSCNetworkReachabilityFlagsConnectionOnDemand)   ? 'D' : '-',
+            (flags & kSCNetworkReachabilityFlagsIsLocalAddress)       ? 'l' : '-',
+            (flags & kSCNetworkReachabilityFlagsIsDirect)             ? 'd' : '-'];
+}
+
 
 static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void* info)
 {
@@ -112,20 +130,20 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
     {
         if(self.reachableBlock)
         {
-            self.reachableBlock(self);
+            self.reachableBlock(noteObject);
         }
     }
     else
     {
         if(self.unreachableBlock)
         {
-            self.unreachableBlock(self);
+            self.unreachableBlock(noteObject);
         }
     }
     
     if(self.reachabilityBlock)
     {
-        self.reachabilityBlock(self, flags);
+        self.reachabilityBlock(noteObject, flags);
     }
     
     // this makes sure the change notification happens on the MAIN THREAD
@@ -387,6 +405,22 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
 
 // 新增API
+
+-(SCNetworkReachabilityFlags)reachabilityFlags
+{
+    SCNetworkReachabilityFlags flags = 0;
+    
+    if(SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
+    {
+        return flags;
+    }
+    
+    return 0;
+}
+-(NSString*)currentReachabilityFlags
+{
+    return reachabilityFlags([self reachabilityFlags]);
+}
 #define testcase (kSCNetworkReachabilityFlagsConnectionRequired | kSCNetworkReachabilityFlagsTransientConnection)
 -(BOOL)isReachableWithFlags:(SCNetworkReachabilityFlags)flags{
     BOOL connectionUP = YES;

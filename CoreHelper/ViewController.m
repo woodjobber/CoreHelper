@@ -17,7 +17,7 @@
 NSString *_string;
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.view.backgroundColor = [UIColor whiteColor];
+     self.view.backgroundColor = [UIColor grayColor];
     // Do any additional setup after loading the view, typically from a nib.
     _string = [CoreHelper currentCoreHelperNetworkStrStatus];
     

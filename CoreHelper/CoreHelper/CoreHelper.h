@@ -24,6 +24,7 @@ FOUNDATION_EXPORT NSString * const CoreHelperCurrentNetworkStatusStrKey;
 @end
 
 @interface CoreHelper : NSObject<NSCoding,NSCopying,NSMutableCopying>
+@property (nonatomic, copy, readonly,getter=thisReachbility) Reachability *reachability;
 /** Singleton*/
  AS_SINGLETON(CoreHelper)
 
@@ -80,8 +81,9 @@ FOUNDATION_EXPORT NSString * const CoreHelperCurrentNetworkStatusStrKey;
   Checks whether a local WiFi connection is available. if it is success,return YES, NO otherwise.
  */
 + (BOOL)checkLocalWIFI;
-
+#if	TARGET_OS_IPHONE
 - (BOOL)isReachableViaWiFi;
 - (BOOL)isReachableViaWWAN;
 - (BOOL)isReachable;
+#endif
 @end

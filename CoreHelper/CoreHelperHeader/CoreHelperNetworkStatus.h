@@ -27,4 +27,5 @@ typedef enum:NSInteger {
   
 }CoreHelperNetworkStatus;/**<Network Status*/
 
+
 #endif /* CoreHelper_NetworkStatus_h */
