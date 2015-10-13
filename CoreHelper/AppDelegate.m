@@ -27,13 +27,14 @@ AppDelegate *sharedAppDelegate;
     [CoreHelper sharedInstance].thisReachbility.reachableQueue = ReachabilityQueueSerial;
     [CoreHelper sharedInstance].thisReachbility.reachableBlock = ^(Reachability *reach){
         NSLog(@"%@",reach);
+        
     };
      [CoreHelper startDetectNetwork:self];
     
     CGFloat x = CGRectGetWidth([[UIScreen mainScreen] bounds]);
     CGFloat y = CGRectGetHeight([[UIScreen mainScreen] bounds]);
     CGFloat width  = 200;
-    CGFloat height = 280;
+    CGFloat height = 300;
     CGRect rect = CGRectMake(x/2 - width/2, y/2 - height/2 - 200, width, height);
     self.statusLabel = [[UILabel alloc]initWithFrame:rect];
     self.statusLabel.backgroundColor = [UIColor clearColor];
