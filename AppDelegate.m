@@ -29,6 +29,7 @@ AppDelegate *sharedAppDelegate;
         NSLog(@"%@",reach);
         
     };
+    
      [CoreHelper startDetectNetwork:self];
     
     CGFloat x = CGRectGetWidth([[UIScreen mainScreen] bounds]);

@@ -14,13 +14,13 @@
 #endif
 
 #if __has_feature(objc_arc)
-#ifndef DEF_SINGLETON
+#undef  DEF_SINGLETON
 #define DEF_SINGLETON( __class ) \
 - (__class *)sharedInstance \
 {\
 return [__class sharedInstance]; \
 } \
-static __class * __singleton__ = nil; \
+static __class * __singleton__; \
 + (id)allocWithZone:(struct _NSZone *)zone \
 { \
 static dispatch_once_t onceToken; \
@@ -31,8 +31,8 @@ return __singleton__; \
 }   \
 + (__class *)sharedInstance \
 { \
-static dispatch_once_t once; \
-dispatch_once( &once, ^{ if(__singleton__ == nil){ __singleton__ = [[__class alloc] init]; } } ); \
+static dispatch_once_t onceToken; \
+dispatch_once( &onceToken, ^{  __singleton__ = [[self alloc] init]; }); \
 return __singleton__; \
 } \
   \
@@ -45,7 +45,6 @@ return __singleton__; \
    return __singleton__; \
 }
 
-#endif
 
 #else
 

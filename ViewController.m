@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CoreHelper.h"
 #import "AppDelegate.h"
+#import "CoreStatusSingleton.h"
 @interface ViewController ()
 
 @end
@@ -19,7 +20,15 @@ NSString *_string;
     [super viewDidLoad];
      self.view.backgroundColor = [UIColor grayColor];
     // Do any additional setup after loading the view, typically from a nib.
+    
     _string = [CoreHelper currentCoreHelperNetworkStrStatus];
+    [CoreHelper sharedInstance].thisReachbility.unreachableBlock = ^(Reachability *reachability){
+        NSLog(@"%@",reachability);
+    };
+    
+    [CoreHelper sharedInstance].thisReachbility.reachabilityBlock = ^(Reachability *reachability,SCNetworkConnectionFlags flags){
+        NSLog(@"%@,%d",reachability,flags);
+    };
     
 }
 - (void)viewDidAppear:(BOOL)animated{
@@ -32,8 +41,10 @@ NSString *_string;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
-    NSString * statusString = [CoreHelper currentCoreHelperNetworkStrStatus];
-    sharedAppDelegate.statusLabel.text = statusString;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString * statusString = [CoreHelper currentCoreHelperNetworkStrStatus];
+        sharedAppDelegate.statusLabel.text = statusString;
+    });
+   
 }
 @end
