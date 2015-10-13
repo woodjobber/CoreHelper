@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>libCoreHelper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7C69ACE51BCBA191002AE183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7C9CAD811BC8EEAC001D3138</key>
 		<dict>
 			<key>primary</key>

@@ -7,16 +7,40 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
-@interface AppDelegate ()
+
+@interface AppDelegate ()<CoreHelperProtocol>
 
 @end
-
+AppDelegate *sharedAppDelegate;
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *vc = [ViewController new];
+    self.window.rootViewController = vc;
+    self.window.backgroundColor = [UIColor blackColor];
+    sharedAppDelegate = self;
+     [CoreHelper startDetectNetwork:self];
+    
+    CGFloat x = CGRectGetWidth([[UIScreen mainScreen] bounds]);
+    CGFloat y = CGRectGetHeight([[UIScreen mainScreen] bounds]);
+    CGFloat width  = 200;
+    CGFloat height = 280;
+    CGRect rect = CGRectMake(x/2 - width/2, y/2 - height/2 - 160, width, height);
+    self.statusLabel = [[UILabel alloc]initWithFrame:rect];
+    self.statusLabel.backgroundColor = [UIColor clearColor];
+    self.statusLabel.textAlignment   = NSTextAlignmentCenter;
+    self.statusLabel.font = [UIFont systemFontOfSize:64];
+    self.statusLabel.textColor = [UIColor redColor];
+    self.statusLabel.layer.shadowColor = [UIColor purpleColor].CGColor;
+    self.statusLabel.layer.shadowOffset = CGSizeMake(4, 4);
+    self.statusLabel.layer.shadowOpacity = 0.6f;
+    [vc.view addSubview:self.statusLabel];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -42,4 +66,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)coreHelperNetworkChangedNotification:(NSNotification *)noti{
+   dispatch_async(dispatch_get_main_queue(), ^{
+        self.statusLabel.text =[[noti userInfo] objectForKey:CoreHelperCurrentNetworkStatusStrKey];
+   });
+   
+}
 @end
