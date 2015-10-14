@@ -93,6 +93,7 @@ NSString * const CoreHelperCurrentNetworkStatusStrKey  = @"CurrentNetworkStatusS
     return [self reachability];
 }
 DEF_SINGLETON(CoreHelper);
+
 +(void)initialize{
     CoreHelper *helper          = [CoreHelper sharedInstance];
     helper.telephonyNetworkInfo = [[CTTelephonyNetworkInfo alloc]init];
@@ -138,11 +139,13 @@ DEF_SINGLETON(CoreHelper);
 }
 #pragma mark -- Public Methods
 +(CoreHelperNetworkStatus)currentCoreHelperNetworkStatus{
-   
+    CoreHelper *helper = [CoreHelper sharedInstance];
+    
     return [[CoreHelper sharedInstance] networkSatusAndRadioAccessTechnology];
 }
 +(NSString *)currentCoreHelperNetworkStrStatus{
-    return [[CoreHelper sharedInstance].coreHelperNetworkStatusStrArray[[self currentCoreHelperNetworkStatus]] copy];
+    NSInteger index = [self currentCoreHelperNetworkStatus];
+    return [CoreHelper sharedInstance].coreHelperNetworkStatusStrArray[index];
 }
 
 +(void)startDetectNetwork:(id<CoreHelperProtocol>)detector{
