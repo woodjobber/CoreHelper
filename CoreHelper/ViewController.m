@@ -26,7 +26,7 @@ NSString *_string;
     [CoreHelper sharedInstance].thisReachbility.unreachableBlock = ^(Reachability *reachability){
         NSLog(@"%@",reachability);
     };
-    NSLog(@"%@",[CoreHelper sharedInstance]); 
+    //NSLog(@"%@",[CoreHelper sharedInstance]);
     [CoreHelper sharedInstance].thisReachbility.reachabilityBlock = ^(Reachability *reachability,SCNetworkConnectionFlags flags){
         NSLog(@"%@,%d",reachability,flags);
     };
