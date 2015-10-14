@@ -31,10 +31,15 @@ NSString *_string;
         NSLog(@"%@,%d",reachability,flags);
     };
     
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    sharedAppDelegate.statusLabel.text = _string;
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    sharedAppDelegate.statusLabel.text = _string;
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,7 +52,7 @@ NSString *_string;
          NSLog(@"%@",statusString);
         sharedAppDelegate.statusLabel.text = statusString;
     });
-    CoreHelper *ddd  = [[CoreHelper alloc]init];
+    
     
 }
 @end
