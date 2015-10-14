@@ -24,3 +24,5 @@ DerivedData
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 #Pods/
+
+CoreHelper.xcodeproj/xcuserdata/chengbin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

@@ -22,10 +22,11 @@ NSString *_string;
     // Do any additional setup after loading the view, typically from a nib.
     
     _string = [CoreHelper currentCoreHelperNetworkStrStatus];
+    NSLog(@"%@",_string);
     [CoreHelper sharedInstance].thisReachbility.unreachableBlock = ^(Reachability *reachability){
         NSLog(@"%@",reachability);
     };
-    
+    NSLog(@"%@",[CoreHelper sharedInstance]); 
     [CoreHelper sharedInstance].thisReachbility.reachabilityBlock = ^(Reachability *reachability,SCNetworkConnectionFlags flags){
         NSLog(@"%@,%d",reachability,flags);
     };
@@ -43,8 +44,10 @@ NSString *_string;
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString * statusString = [CoreHelper currentCoreHelperNetworkStrStatus];
+         NSLog(@"%@",statusString);
         sharedAppDelegate.statusLabel.text = statusString;
     });
-   
+    CoreHelper *ddd  = [[CoreHelper alloc]init];
+    
 }
 @end
