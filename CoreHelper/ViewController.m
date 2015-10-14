@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CoreHelper.h"
 #import "AppDelegate.h"
-#import "CoreStatusSingleton.h"
+#import "CoreHelperSingleton.h"
 @interface ViewController ()
 
 @end
@@ -26,7 +26,7 @@ NSString *_string;
     [CoreHelper sharedInstance].thisReachbility.unreachableBlock = ^(Reachability *reachability){
         NSLog(@"%@",reachability);
     };
-    //NSLog(@"%@",[CoreHelper sharedInstance]);
+    NSLog(@"%@",[CoreHelper sharedInstance]);
     [CoreHelper sharedInstance].thisReachbility.reachabilityBlock = ^(Reachability *reachability,SCNetworkConnectionFlags flags){
         NSLog(@"%@,%d",reachability,flags);
     };
