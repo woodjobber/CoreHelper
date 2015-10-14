@@ -1,12 +1,12 @@
 # CoreHelper
-一、功能
+#一、功能
 1.可以检测2G,3G,4G,WIFI网络状态.
 
 2.针对 Reachability 进行封装
 
 3.在Reachability中，增加一些新的API.
 
-二、如何使用
+#二、如何使用
 
 步骤：1.引用libCoreHelper.framework 库到工程，并且导入头文件"CoreHelper.h"
       
@@ -28,6 +28,7 @@
       3.开始监听网络状态 [CoreHelper startDetectNetwork:self];
       
       4.获取当前网络状态 [CoreHelper currentCoreHelperNetworkStrStatus];
-三、总结
+#三、总结
+
    如果存在逻辑错误，或者其它bug，欢迎给我发邮件 woodjobber@outlook.com;
       
