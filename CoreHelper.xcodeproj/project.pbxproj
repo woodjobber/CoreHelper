@@ -16,8 +16,6 @@
 		7C000C0F1BCCE0E60020DADE /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000C021BCCDC2C0020DADE /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C000C101BCCE0E80020DADE /* CoreHelperSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000BFF1BCCDC2C0020DADE /* CoreHelperSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C000C111BCCE0E90020DADE /* CoreHelperNetworkStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000BFE1BCCDC2C0020DADE /* CoreHelperNetworkStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C000C161BCCEA570020DADE /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C000C141BCCEA570020DADE /* AppIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		7C000C171BCCEA570020DADE /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C000C151BCCEA570020DADE /* AppIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
 		7C000C1B1BCCF4690020DADE /* libCoreHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000C1A1BCCF4690020DADE /* libCoreHelper.h */; settings = {ASSET_TAGS = (); }; };
 		7C69ACEE1BCBA191002AE183 /* libCoreHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C69ACF91BCBA388002AE183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACF81BCBA388002AE183 /* UIKit.framework */; };
@@ -62,8 +60,6 @@
 		7C000C021BCCDC2C0020DADE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		7C000C031BCCDC2C0020DADE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7C000C0C1BCCDC810020DADE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		7C000C141BCCEA570020DADE /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
-		7C000C151BCCEA570020DADE /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
 		7C000C1A1BCCF4690020DADE /* libCoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libCoreHelper.h; sourceTree = "<group>"; };
 		7C000C1C1BCD12FC0020DADE /* CoreStatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusSingleton.h; sourceTree = "<group>"; };
 		7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libCoreHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,8 +179,6 @@
 				7C9CAD8C1BC8EEAC001D3138 /* ViewController.m */,
 				7C000C1C1BCD12FC0020DADE /* CoreStatusSingleton.h */,
 				7C9CAD911BC8EEAC001D3138 /* Assets.xcassets */,
-				7C000C141BCCEA570020DADE /* AppIcon@2x.png */,
-				7C000C151BCCEA570020DADE /* AppIcon@3x.png */,
 				7C9CAD931BC8EEAC001D3138 /* LaunchScreen.storyboard */,
 				7C9CAD961BC8EEAC001D3138 /* Info.plist */,
 				7C9CAD851BC8EEAC001D3138 /* Supporting Files */,
@@ -303,9 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C000C171BCCEA570020DADE /* AppIcon@3x.png in Resources */,
 				7C9CAD951BC8EEAC001D3138 /* LaunchScreen.storyboard in Resources */,
-				7C000C161BCCEA570020DADE /* AppIcon@2x.png in Resources */,
 				7C9CAD921BC8EEAC001D3138 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
