@@ -24,7 +24,7 @@ AppDelegate *sharedAppDelegate;
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor blackColor];
     sharedAppDelegate = self;
-    [CoreHelper sharedInstance].thisReachbility.reachableQueue = ReachabilityQueueSerial;
+    [CoreHelper sharedInstance].thisReachbility.reachableQueue = ReachabilityQueueRunLoop;
     [CoreHelper sharedInstance].thisReachbility.reachableBlock = ^(Reachability *reach){
         NSLog(@"%@",reach);
         

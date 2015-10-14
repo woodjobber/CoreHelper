@@ -114,11 +114,8 @@ DEF_SINGLETON(CoreHelper);
 }
 -(Reachability *)reachability{
     if (!_reachability) {
-        _reachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
-         if (!_reachability) {
-             _reachability = [Reachability reachabilityForInternetConnection];
-        }
-    
+        _reachability = [Reachability reachabilityForInternetConnection];
+
     }
     return _reachability;
 }
@@ -138,7 +135,7 @@ DEF_SINGLETON(CoreHelper);
 
 -(NSArray *)coreHelperNetworkStatusStrArray{
     if (!_coreHelperNetworkStatusStrArray) {
-        _coreHelperNetworkStatusStrArray = @[@"None",@"WIFI",@"Cellular",@"2G",@"3G",@"4G",@"Unknown"];
+        _coreHelperNetworkStatusStrArray = @[@"None",@"WiFi",@"Cellular",@"2G",@"3G",@"4G",@"Unknown"];
     }
     return _coreHelperNetworkStatusStrArray;
 }
@@ -150,7 +147,7 @@ DEF_SINGLETON(CoreHelper);
 }
 +(NSString *)currentCoreHelperNetworkStrStatus{
     NSInteger index = [self currentCoreHelperNetworkStatus];
-   
+    
     return [CoreHelper sharedInstance].coreHelperNetworkStatusStrArray[index];
 }
 
@@ -192,6 +189,7 @@ DEF_SINGLETON(CoreHelper);
             networkStatus = CoreHelperNetworkStatus4G;
         }
     }
+    NSLog(@"status:%ld",networkStatus);
     return networkStatus;
 }
 
@@ -297,16 +295,14 @@ DEF_SINGLETON(CoreHelper);
     NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:@([CoreHelper currentCoreHelperNetworkStatus]),CoreHelperCurrentNetworkStatusEnumKey,str,CoreHelperCurrentNetworkStatusStrKey, nil];
     if (self.status_ap.hash != str.hash) {
         self.status_ap = str;
-        //this makes sure the change notification happens on the Main thread.
         
+        //this makes sure the change notification happens on the Main thread.
         dispatch_async(dispatch_get_main_queue(), ^{
           [[NSNotificationCenter defaultCenter] postNotificationName:CoreHelperNetworkChangedNotification object:self userInfo:dic];
         });
        
     }
 }
-
-
 
 #pragma mark -- NSCopying Protocol
 - (void)encodeWithCoder:(NSCoder *)encoder{
