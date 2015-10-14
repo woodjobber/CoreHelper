@@ -8,7 +8,8 @@
 
 #二、如何使用
 
-步骤：1.引用libCoreHelper.framework 库到工程，并且导入头文件"CoreHelper.h"
+####步骤：
+      1.引用libCoreHelper.framework 库到工程，并且导入头文件"CoreHelper.h"
       
       2.遵守协议 CoreHelperProtocol，实现- (void)coreHelperNetworkChangedNotification:(NSNotification *)noti方法;这是一个可选的，还可以用block回调监听网络状态改变，像这样使用
       
