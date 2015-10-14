@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D994F291BCE9ED600DFB064 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D994F281BCE9ED600DFB064 /* Default-568h@2x.png */; };
 		7C000C051BCCDC2C0020DADE /* CoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000BFC1BCCDC2C0020DADE /* CoreHelper.m */; };
 		7C000C061BCCDC2C0020DADE /* CoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000BFC1BCCDC2C0020DADE /* CoreHelper.m */; };
 		7C000C0A1BCCDC2C0020DADE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000C031BCCDC2C0020DADE /* Reachability.m */; };
@@ -29,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7C000C121BCCE3F20020DADE /* PBXContainerItemProxy */ = {
+		5D994F261BCE9E6E00DFB064 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7C9CAD7A1BC8EEAC001D3138 /* Project object */;
 			proxyType = 1;
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D994F281BCE9ED600DFB064 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7C000BFB1BCCDC2C0020DADE /* CoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHelper.h; sourceTree = "<group>"; };
 		7C000BFC1BCCDC2C0020DADE /* CoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHelper.m; sourceTree = "<group>"; };
 		7C000BFE1BCCDC2C0020DADE /* CoreHelperNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHelperNetworkStatus.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		7C9CAD791BC8EEAC001D3138 = {
 			isa = PBXGroup;
 			children = (
+				5D994F281BCE9ED600DFB064 /* Default-568h@2x.png */,
 				7C000C001BCCDC2C0020DADE /* Frameworks */,
 				7C9CAD841BC8EEAC001D3138 /* CoreHelper */,
 				7C69ACE71BCBA191002AE183 /* libCoreHelper */,
@@ -222,7 +225,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7C000C131BCCE3F20020DADE /* PBXTargetDependency */,
+				5D994F271BCE9E6E00DFB064 /* PBXTargetDependency */,
 			);
 			name = libCoreHelper;
 			productName = libCoreHelper;
@@ -297,6 +300,7 @@
 			files = (
 				7C9CAD951BC8EEAC001D3138 /* LaunchScreen.storyboard in Resources */,
 				7C9CAD921BC8EEAC001D3138 /* Assets.xcassets in Resources */,
+				5D994F291BCE9ED600DFB064 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +331,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7C000C131BCCE3F20020DADE /* PBXTargetDependency */ = {
+		5D994F271BCE9E6E00DFB064 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7C9CAD811BC8EEAC001D3138 /* CoreHelper */;
-			targetProxy = 7C000C121BCCE3F20020DADE /* PBXContainerItemProxy */;
+			targetProxy = 5D994F261BCE9E6E00DFB064 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,7 +368,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
@@ -393,8 +399,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
