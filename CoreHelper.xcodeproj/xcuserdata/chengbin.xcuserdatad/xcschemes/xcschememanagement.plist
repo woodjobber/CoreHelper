@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Appledoc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>CoreHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>7C9CAD811BC8EEAC001D3138</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CE5CAD41BDDD358005C4280</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CE71FF01BDDCF56003DD000</key>
 		<dict>
 			<key>primary</key>
 			<true/>

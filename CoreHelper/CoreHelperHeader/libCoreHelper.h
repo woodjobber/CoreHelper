@@ -8,6 +8,8 @@
 
 #ifndef libCoreHelper_h
 #define libCoreHelper_h
-
+#import "CoreHelper.h"
+#import "CoreHelperNetworkStatus.h"
+#import "CoreHelperSingleton.h"
 
 #endif /* libCoreHelper_h */

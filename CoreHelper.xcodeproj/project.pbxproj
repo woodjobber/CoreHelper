@@ -6,31 +6,43 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7CE71FF01BDDCF56003DD000 /* Appledoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7CE71FF31BDDCF56003DD000 /* Build configuration list for PBXAggregateTarget "Appledoc" */;
+			buildPhases = (
+				7CE71FF41BDDCF67003DD000 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Appledoc;
+			productName = Appledoc;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5D994F291BCE9ED600DFB064 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D994F281BCE9ED600DFB064 /* Default-568h@2x.png */; };
 		7C000C051BCCDC2C0020DADE /* CoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000BFC1BCCDC2C0020DADE /* CoreHelper.m */; };
-		7C000C061BCCDC2C0020DADE /* CoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000BFC1BCCDC2C0020DADE /* CoreHelper.m */; };
 		7C000C0A1BCCDC2C0020DADE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000C031BCCDC2C0020DADE /* Reachability.m */; };
-		7C000C0B1BCCDC2C0020DADE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C000C031BCCDC2C0020DADE /* Reachability.m */; };
-		7C000C0D1BCCDC810020DADE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C000C0C1BCCDC810020DADE /* SystemConfiguration.framework */; };
-		7C000C0E1BCCE0DF0020DADE /* CoreHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000BFB1BCCDC2C0020DADE /* CoreHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C000C0F1BCCE0E60020DADE /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000C021BCCDC2C0020DADE /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C000C101BCCE0E80020DADE /* CoreHelperSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000BFF1BCCDC2C0020DADE /* CoreHelperSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C000C111BCCE0E90020DADE /* CoreHelperNetworkStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000BFE1BCCDC2C0020DADE /* CoreHelperNetworkStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C000C1B1BCCF4690020DADE /* libCoreHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C000C1A1BCCF4690020DADE /* libCoreHelper.h */; };
-		7C69ACEE1BCBA191002AE183 /* libCoreHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7C69ACF91BCBA388002AE183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACF81BCBA388002AE183 /* UIKit.framework */; };
-		7C69ACFB1BCBA3DE002AE183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACFA1BCBA3DE002AE183 /* Foundation.framework */; };
-		7C69ACFD1BCBA44E002AE183 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69ACFC1BCBA44E002AE183 /* CoreTelephony.framework */; };
 		7C9CAD871BC8EEAC001D3138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9CAD861BC8EEAC001D3138 /* main.m */; };
 		7C9CAD8A1BC8EEAC001D3138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9CAD891BC8EEAC001D3138 /* AppDelegate.m */; };
 		7C9CAD8D1BC8EEAC001D3138 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9CAD8C1BC8EEAC001D3138 /* ViewController.m */; };
 		7C9CAD921BC8EEAC001D3138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9CAD911BC8EEAC001D3138 /* Assets.xcassets */; };
 		7C9CAD951BC8EEAC001D3138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C9CAD931BC8EEAC001D3138 /* LaunchScreen.storyboard */; };
+		7CE5CAD81BDDD359005C4280 /* libCoreHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE5CAD71BDDD359005C4280 /* libCoreHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CE5CADC1BDDD359005C4280 /* libCoreHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE5CAD51BDDD358005C4280 /* libCoreHelper.framework */; };
+		7CE5CADD1BDDD359005C4280 /* libCoreHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE5CAD51BDDD358005C4280 /* libCoreHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5DED10D91BCEAE5C0086E3F3 /* PBXContainerItemProxy */ = {
+		7CE5CADA1BDDD359005C4280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C9CAD7A1BC8EEAC001D3138 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CE5CAD41BDDD358005C4280;
+			remoteInfo = libCoreHelper;
+		};
+		7CE5CAE11BDDD400005C4280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7C9CAD7A1BC8EEAC001D3138 /* Project object */;
 			proxyType = 1;
@@ -46,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7C69ACEE1BCBA191002AE183 /* libCoreHelper.framework in Embed Frameworks */,
+				7CE5CADD1BDDD359005C4280 /* libCoreHelper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +75,6 @@
 		7C000C031BCCDC2C0020DADE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		7C000C0C1BCCDC810020DADE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7C000C1A1BCCF4690020DADE /* libCoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libCoreHelper.h; sourceTree = "<group>"; };
-		7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libCoreHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C69ACF81BCBA388002AE183 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C69ACFA1BCBA3DE002AE183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C69ACFC1BCBA44E002AE183 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -76,21 +87,21 @@
 		7C9CAD911BC8EEAC001D3138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C9CAD941BC8EEAC001D3138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C9CAD961BC8EEAC001D3138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE5CAD51BDDD358005C4280 /* libCoreHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libCoreHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE5CAD71BDDD359005C4280 /* libCoreHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libCoreHelper.h; sourceTree = "<group>"; };
+		7CE5CAD91BDDD359005C4280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C69ACE21BCBA191002AE183 /* Frameworks */ = {
+		7C9CAD7F1BC8EEAC001D3138 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C000C0D1BCCDC810020DADE /* SystemConfiguration.framework in Frameworks */,
-				7C69ACFD1BCBA44E002AE183 /* CoreTelephony.framework in Frameworks */,
-				7C69ACFB1BCBA3DE002AE183 /* Foundation.framework in Frameworks */,
-				7C69ACF91BCBA388002AE183 /* UIKit.framework in Frameworks */,
+				7CE5CADC1BDDD359005C4280 /* libCoreHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C9CAD7F1BC8EEAC001D3138 /* Frameworks */ = {
+		7CE5CAD11BDDD358005C4280 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -151,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				5D994F281BCE9ED600DFB064 /* Default-568h@2x.png */,
+				7CE5CAD61BDDD358005C4280 /* libCoreHelper */,
 				7C000C001BCCDC2C0020DADE /* Frameworks */,
 				7C9CAD841BC8EEAC001D3138 /* CoreHelper */,
 				7C69ACE71BCBA191002AE183 /* libCoreHelper */,
@@ -162,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7C9CAD821BC8EEAC001D3138 /* CoreHelper.app */,
-				7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */,
+				7CE5CAD51BDDD358005C4280 /* libCoreHelper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,43 +205,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7CE5CAD61BDDD358005C4280 /* libCoreHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7CE5CAD71BDDD359005C4280 /* libCoreHelper.h */,
+				7CE5CAD91BDDD359005C4280 /* Info.plist */,
+			);
+			path = libCoreHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7C69ACE31BCBA191002AE183 /* Headers */ = {
+		7CE5CAD21BDDD358005C4280 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C000C1B1BCCF4690020DADE /* libCoreHelper.h in Headers */,
-				7C000C0E1BCCE0DF0020DADE /* CoreHelper.h in Headers */,
-				7C000C0F1BCCE0E60020DADE /* Reachability.h in Headers */,
-				7C000C111BCCE0E90020DADE /* CoreHelperNetworkStatus.h in Headers */,
-				7C000C101BCCE0E80020DADE /* CoreHelperSingleton.h in Headers */,
+				7CE5CAD81BDDD359005C4280 /* libCoreHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7C69ACE51BCBA191002AE183 /* libCoreHelper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C69ACEF1BCBA191002AE183 /* Build configuration list for PBXNativeTarget "libCoreHelper" */;
-			buildPhases = (
-				7C69ACE11BCBA191002AE183 /* Sources */,
-				7C69ACE21BCBA191002AE183 /* Frameworks */,
-				7C69ACE31BCBA191002AE183 /* Headers */,
-				7C69ACE41BCBA191002AE183 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5DED10DA1BCEAE5C0086E3F3 /* PBXTargetDependency */,
-			);
-			name = libCoreHelper;
-			productName = libCoreHelper;
-			productReference = 7C69ACE61BCBA191002AE183 /* libCoreHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		7C9CAD811BC8EEAC001D3138 /* CoreHelper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C9CAD991BC8EEAC001D3138 /* Build configuration list for PBXNativeTarget "CoreHelper" */;
@@ -242,11 +240,31 @@
 			buildRules = (
 			);
 			dependencies = (
+				7CE5CADB1BDDD359005C4280 /* PBXTargetDependency */,
 			);
 			name = CoreHelper;
 			productName = CoreHelper;
 			productReference = 7C9CAD821BC8EEAC001D3138 /* CoreHelper.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7CE5CAD41BDDD358005C4280 /* libCoreHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE5CAE01BDDD359005C4280 /* Build configuration list for PBXNativeTarget "libCoreHelper" */;
+			buildPhases = (
+				7CE5CAD01BDDD358005C4280 /* Sources */,
+				7CE5CAD11BDDD358005C4280 /* Frameworks */,
+				7CE5CAD21BDDD358005C4280 /* Headers */,
+				7CE5CAD31BDDD358005C4280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CE5CAE21BDDD400005C4280 /* PBXTargetDependency */,
+			);
+			name = libCoreHelper;
+			productName = libCoreHelper;
+			productReference = 7CE5CAD51BDDD358005C4280 /* libCoreHelper.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -257,10 +275,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = chengbin;
 				TargetAttributes = {
-					7C69ACE51BCBA191002AE183 = {
+					7C9CAD811BC8EEAC001D3138 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					7C9CAD811BC8EEAC001D3138 = {
+					7CE5CAD41BDDD358005C4280 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7CE71FF01BDDCF56003DD000 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -279,19 +300,13 @@
 			projectRoot = "";
 			targets = (
 				7C9CAD811BC8EEAC001D3138 /* CoreHelper */,
-				7C69ACE51BCBA191002AE183 /* libCoreHelper */,
+				7CE71FF01BDDCF56003DD000 /* Appledoc */,
+				7CE5CAD41BDDD358005C4280 /* libCoreHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C69ACE41BCBA191002AE183 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C9CAD801BC8EEAC001D3138 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,18 +317,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7C69ACE11BCBA191002AE183 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		7CE5CAD31BDDD358005C4280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C000C0B1BCCDC2C0020DADE /* Reachability.m in Sources */,
-				7C000C061BCCDC2C0020DADE /* CoreHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CE71FF41BDDCF67003DD000 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"GlobalRoam\" \\\n--company-id \"com.globalroam\" \\\n--output \"~/Projects/Help/${PROJECT_NAME}\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \\\n--ignore \"LoadableCategory.h\" \\\n--ignore \"AppDelegate.h\" \\\n--ignore \"ViewController.h\" \\\n--index-desc \"${PROJECT_DIR}/readme.markdown\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		7C9CAD7E1BC8EEAC001D3138 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,13 +355,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CE5CAD01BDDD358005C4280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5DED10DA1BCEAE5C0086E3F3 /* PBXTargetDependency */ = {
+		7CE5CADB1BDDD359005C4280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CE5CAD41BDDD358005C4280 /* libCoreHelper */;
+			targetProxy = 7CE5CADA1BDDD359005C4280 /* PBXContainerItemProxy */;
+		};
+		7CE5CAE21BDDD400005C4280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7C9CAD811BC8EEAC001D3138 /* CoreHelper */;
-			targetProxy = 5DED10D91BCEAE5C0086E3F3 /* PBXContainerItemProxy */;
+			targetProxy = 7CE5CAE11BDDD400005C4280 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,69 +389,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7C69ACF01BCBA191002AE183 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				HEADER_SEARCH_PATHS = libCoreHelper.framework/Headers;
-				INFOPLIST_FILE = libCoreHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = "non-global";
-				USE_HEADERMAP = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C69ACF11BCBA191002AE183 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1.0;
-				DYLIB_CURRENT_VERSION = 1.0;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = libCoreHelper.framework/Headers;
-				INFOPLIST_FILE = libCoreHelper/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = "non-global";
-				USE_HEADERMAP = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7C9CAD971BC8EEAC001D3138 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,18 +498,63 @@
 			};
 			name = Release;
 		};
+		7CE5CADE1BDDD359005C4280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = libCoreHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CE5CADF1BDDD359005C4280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = libCoreHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globalroam.www.libCoreHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CE71FF11BDDCF56003DD000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CE71FF21BDDCF56003DD000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C69ACEF1BCBA191002AE183 /* Build configuration list for PBXNativeTarget "libCoreHelper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C69ACF01BCBA191002AE183 /* Debug */,
-				7C69ACF11BCBA191002AE183 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7C9CAD7D1BC8EEAC001D3138 /* Build configuration list for PBXProject "CoreHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -546,6 +569,23 @@
 			buildConfigurations = (
 				7C9CAD9A1BC8EEAC001D3138 /* Debug */,
 				7C9CAD9B1BC8EEAC001D3138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE5CAE01BDDD359005C4280 /* Build configuration list for PBXNativeTarget "libCoreHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE5CADE1BDDD359005C4280 /* Debug */,
+				7CE5CADF1BDDD359005C4280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CE71FF31BDDCF56003DD000 /* Build configuration list for PBXAggregateTarget "Appledoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE71FF11BDDCF56003DD000 /* Debug */,
+				7CE71FF21BDDCF56003DD000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
