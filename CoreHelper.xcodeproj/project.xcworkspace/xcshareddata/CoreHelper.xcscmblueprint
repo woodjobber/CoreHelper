@@ -1,18 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++3BCB918",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++5FA58BD",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++B4435E5" : 0,
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++60F00E8" : 0,
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++3BCB918" : 0
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++2ECFB0C" : 0,
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++5FA58BD" : 0,
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++E91C069" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23E311EF-CFE5-4351-9F2B-4AE4E633DDFA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++B4435E5" : "CoreHelper\/CoreHelper\/",
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++60F00E8" : "CoreHelper\/CoreHelper\/",
-    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++3BCB918" : "CoreHelper\/"
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++2ECFB0C" : "CoreHelper\/CoreHelper\/",
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++5FA58BD" : "CoreHelper\/",
+    "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++E91C069" : "CoreHelper\/CoreHelper\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CoreHelper",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,17 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodjobber\/CoreHelper.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++3BCB918"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodjobber\/woodjobber.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++60F00E8"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++2ECFB0C"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodjobber\/CoreHelper.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++B4435E5"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++5FA58BD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/woodjobber\/woodjobber.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EDD24618414FB5954C661A7D8C7EC0090CAD05A+++E91C069"
     }
   ]
 }
