@@ -31,4 +31,5 @@
 #三、总结
 
    如果存在逻辑错误，或者其它bug，欢迎给我发邮件 woodjobber@outlook.com;
-      
+   
+   Blog [http://woodjobber.github.io/](http://woodjobber.github.io/)
